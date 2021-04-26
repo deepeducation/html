@@ -1,37 +1,117 @@
-.button {
-    display: inline-flex;
-    height: 50px;
-    padding: 0;
-    background: #009578;
-    border: none;
-    outline: none;
+  .card {
+    
+    transition: 0.3s;
     border-radius: 5px;
-    overflow: hidden;
-    font-family: "Quicksand", sans-serif;
+    box-shadow: 0px 1px 2px 1px rgb(26, 39, 53);
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+  }
+  
+  .container_Q {
+  
+    padding: 10px 20px 30px 20px;
     font-size: 16px;
-    font-weight: 500;
+    border-radius: 5px 5px 0 0;
+    color:#000;
+    background-color: #dfecf9;
+  }
+  
+  .container_Op {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .container_R {
+    padding: 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
     cursor: pointer;
+    width: 100%;
+    font-size: 18px;
   }
   
-  .button:hover {
-    background: #008168;
+  .card button:hover {
+    opacity: 0.7;
   }
   
-  .button:active {
-    background: #006e58;
+  .card img {
+    border-radius: 5px 5px 5px 5px;
+    display: block;
+    
+    
+  }
+    
+   pre{ border:2px solid #f5f5f5; padding:10px; overflow-x:scroll;}
+   input[type=radio] {
+      display:none; 
+  }
+  input[type=radio] + label {
+      display:inline-block;
+    width:95%;
+    padding:10px;
+    border:1px solid #ddd;
+    margin-bottom:10px;
   }
   
-  .button__text,
-  .button__icon {
-    display: inline-flex;
-    align-items: center;
-    padding: 0 34px;
-    color: #fff;
-    height: 100%;
+  input[type=radio]:checked + label { 
+  background-image: none;
+  background-color:#4b6b8a;
+  color:#fff;
+  border:1px solid #102e4b !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  } 
+
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
   }
   
-  .button__icon {
-    font-size: 1.5em;
-    background: rgba(0, 0, 0, 0.08);
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
   }
   
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+  #flip, #res{
+    padding: 0px;
+    text-align: center;    
+  }
+
+  #flipsol,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10,#s11,#s12,#s13,#s14,#s15,#s16,#s17,#s18,#s19,#s20,#s21,#s22,#s23,#s24,#s25,#s26,#s27,#s28,#s29,#s30,#s31,#s32,#s33,#s34,#s35,#s36,#s37,#s38,#s39,#s40,#s41,#s42,#s43,#s44,#s45,#s46,#s47,#s48,#s49,#s50{
+    padding: 0px;
+    text-align: left;
+    color:green 
+  }
+  #res,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10,#s11,#s12,#s13,#s14,#s15,#s16,#s17,#s18,#s19,#s20,#s21,#s22,#s23,#s24,#s25,#s26,#s27,#s28,#s29,#s30,#s31,#s32,#s33,#s34,#s35,#s36,#s37,#s38,#s39,#s40,#s41,#s42,#s43,#s44,#s45,#s46,#s47,#s48,#s49,#s50{
+    padding: 0px;
+    display: none;
+  }
