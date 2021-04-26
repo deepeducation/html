@@ -66,7 +66,7 @@
       document.getElementById('att').style.fontWeight="bold";
       document.getElementById('att').style.color="green";
      }
-    function sol()
+    function solution()
      {
      //solution();
      document.body.scrollTop = 0;
@@ -74,7 +74,7 @@
      
      }
     
-     function res()
+     function restart()
      {
      //reset();
      document.body.scrollTop = 0;
