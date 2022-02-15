@@ -1,20 +1,21 @@
-  .card {
+  .card_Q {
     
     transition: 0.3s;
+    border: 1px solid rgb(70, 70, 70);
     border-radius: 5px;
-    box-shadow: 0px 1px 2px 1px rgb(26, 39, 53);
     font-family:Verdana, Arial, Helvetica, sans-serif;
   }
   
-  .container_Q {
-  
-    padding: 10px 20px 20px 20px;
+  .container_Q {  
+    padding: 12px;
+    line-height: 1.6;
     font-size: 16px;
     border-radius: 5px 5px 0 0;
-    color:#000;
-    background-color: #dfecf9;
+    background-color: #1bbc9b14;
+    border-bottom: 1px solid #4b6b8a;
   }
-  
+
+ 
   .container_Op {
     padding: 20px;
     font-size: 16px;
@@ -22,6 +23,11 @@
     border-radius: 0 0 5px 5px;
   }
   
+  .Op {
+    border:1px solid #f5f5f5 !important;
+    background-color: #ffffff;
+    border-radius: 0px;
+  }
   .container_R {
     padding: 20px;
     font-size: 16px;
@@ -29,53 +35,61 @@
     border-radius: 5px;
   }
   
-  .card button {
+  .card_Q button {
     border: none;
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #000;
+    background-color: #1BBC9B;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
   }
   
-  .card button:hover {
+  .card_Q button:hover {
     opacity: 0.7;
   }
   
-  .card img {
+  .card_Q img {
     border-radius: 5px 5px 5px 5px;
     display: block;
     
     
   }
     
-   pre{ border:2px solid #f5f5f5; padding:10px; overflow-x:scroll;}
+  pre{ border:2px solid #f5f5f5; padding:0px; overflow-x:scroll;}
    input[type=radio] {
       display:none; 
   }
   input[type=radio] + label {
-      display:inline-block;
-    width:95%;
+    display:inline-block;
+    width:-webkit-fill-available;
     padding:10px;
-    border:1px solid #ddd;
-    margin-bottom:10px;
+    /*border:1px solid #ddd;*/
+    
   }
   
   input[type=radio]:checked + label { 
   background-image: none;
-  background-color:#4b6b8a;
   color:#fff;
-  border:1px solid #102e4b !important;
+  /*background-color:#4b6b8a;
+  border:1px solid #102e4b !important;*/
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   } 
-
+  
+ @keyframes animateBackground{
+  0%{
+   transform: translateX(-100%);
+  }
+  100%{
+   transform: translateX(0%); 
+  }
+ }
 
   .icon-bar {
     width: 100%;
@@ -98,7 +112,7 @@
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #1BBC9B;
   }
 
   #flip, #res{
@@ -109,9 +123,12 @@
   #flipsol,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10,#s11,#s12,#s13,#s14,#s15,#s16,#s17,#s18,#s19,#s20,#s21,#s22,#s23,#s24,#s25,#s26,#s27,#s28,#s29,#s30,#s31,#s32,#s33,#s34,#s35,#s36,#s37,#s38,#s39,#s40,#s41,#s42,#s43,#s44,#s45,#s46,#s47,#s48,#s49,#s50{
     padding: 0px;
     text-align: left;
-    color:green 
+    color:green; 
   }
   #res,#s1,#s2,#s3,#s4,#s5,#s6,#s7,#s8,#s9,#s10,#s11,#s12,#s13,#s14,#s15,#s16,#s17,#s18,#s19,#s20,#s21,#s22,#s23,#s24,#s25,#s26,#s27,#s28,#s29,#s30,#s31,#s32,#s33,#s34,#s35,#s36,#s37,#s38,#s39,#s40,#s41,#s42,#s43,#s44,#s45,#s46,#s47,#s48,#s49,#s50{
     padding: 0px;
     display: none;
   }
+
+
+

@@ -10,21 +10,24 @@
       wrong++
         document.getElementById('answer_'+question).innerHTML="&#10060; Wrong!! Correct Ans: "+answer[question]; 
         document.getElementById('answer_'+question).style.color="red";
-      document.getElementById(question+''+answerwer).style.color="red";
-        document.getElementById('answer_'+question).style.fontWeight="bold";
-      
+		    document.getElementById('answer_'+question).style.fontWeight="bold";
+        document.getElementById('Op_'+question+answerwer).style.backgroundColor="red";
+        document.getElementById('Op_'+question+answer[question]).style.backgroundColor="lightgreen";
+        document.getElementById(question+answerwer).style.color="red";
       }
       else
       {
        right++
-       document.getElementById('answer_'+question).innerHTML="&#9989; Ans: "+answer[question]+" is Correct";
+       document.getElementById('answer_'+question).innerHTML='<i class="fa fa-check" style="font-size:24px;"></i> Ans: '+answer[question]+' is Correct';
        document.getElementById('answer_'+question).style.color="green";
-     document.getElementById(question+''+answerwer).style.color="green";
-       document.getElementById('answer_'+question).style.fontWeight="bold";
+	     document.getElementById('answer_'+question).style.fontWeight="bold";
+       document.getElementById('Op_'+question+answerwer).style.backgroundColor="green";
      
       }
       disableGroupBtn(question)
      }
+
+     
      
      
      function disableGroupBtn(group_id)
@@ -39,7 +42,7 @@
      }
      function result()
      {
-    document.getElementById('right').innerHTML= '<i class="fa fa-check" style="font-size:36px;"></i> Right : ' +right+ '/' +total;
+    document.getElementById('right').innerHTML= '<i class="fa fa-check" style="font-size:28px;"></i> Right : ' +right+ '/' +total;
       document.getElementById('right').style.fontWeight="bold";
       document.getElementById('right').style.color="green";
     document.getElementById('wrong').innerHTML= '&#10060; Wrong: ' +wrong+ '/' +total;
