@@ -50,8 +50,16 @@
     border-top: 2px solid #4b6b8a;
     border-radius: 0 0 5px 5px;
   }
+
+  .container_P {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+  }
   .container_R {
-    padding: 20px;
+    padding: 12px;
     font-size: 16px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -88,18 +96,18 @@
     
   }
   
-  input[type=radio]:checked + label { 
+ /* input[type=radio]:checked + label { 
   background-image: none;
-  /*color:#fff;
+  color:#fff;
   background-color:#4b6b8a;
-  border:1px solid #102e4b !important;*/
+  border:1px solid #102e4b !important;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   
-  } 
+  } */
   
  
   .icon-bar {
@@ -110,7 +118,7 @@
   
   .icon-bar a {
     float: left;
-    width: 20%;
+    width: 33.3%;
     text-align: center;
     padding: 12px 0;
     transition: all 0.3s ease;
