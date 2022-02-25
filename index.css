@@ -31,6 +31,21 @@
     border-radius: 0;
     border-bottom: 1px solid #4b6b8a;
   }
+
+  .container_M {      
+    padding: 1px;
+    line-height: 1.5;
+    border-radius: 0;
+    border-bottom: 1px solid #4b6b8a;
+  }
+
+  .container_M td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+    width: 50%;
+  }
   .container_O {
     padding: 12px;
     font-size: 16px;
