@@ -8,7 +8,7 @@
       if(answerwer !=answer[question])
       {
       wrong++
-        document.getElementById('answer_'+question).innerHTML="&#10060; Wrong!! Correct Ans: "+answer[question]; 
+        document.getElementById('answer_'+question).innerHTML="&#10060; Wrong Answer!! Correct Ans: "+answer[question]; 
         document.getElementById('answer_'+question).style.color="red";
 		    document.getElementById('answer_'+question).style.fontWeight="bold";
         document.getElementById('Op_'+question+answerwer).style.backgroundColor="#e74c3c";
@@ -19,7 +19,7 @@
       else
       {
        right++
-       document.getElementById('answer_'+question).innerHTML='<i class="fa fa-check" style="font-size:24px;"></i> Ans: '+answer[question]+' is Correct';
+       document.getElementById('answer_'+question).innerHTML='<i class="fa fa-check" style="font-size:24px;"></i> Correct Answer';
        document.getElementById('answer_'+question).style.color="green";
 	     document.getElementById('answer_'+question).style.fontWeight="bold";
        document.getElementById('Op_'+question+answerwer).style.backgroundColor="#27ae60";
