@@ -8,7 +8,7 @@
       if(answerwer !=answer[question])
       {
       wrong++
-        document.getElementById('answer_'+question).innerHTML="&#10060; Wrong Answer !!"; 
+        document.getElementById('answer_'+question).innerHTML="&#10060; Wrong Answer!!"; 
         document.getElementById('answer_'+question).style.color="red";
 		    document.getElementById('answer_'+question).style.fontWeight="bold";
         document.getElementById('Op_'+question+answerwer).style.backgroundColor="#e74c3c";
