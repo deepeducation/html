@@ -1,11 +1,18 @@
-  .card_Q {
+
+ .card_Q {
     
     transition: 0.3s;
     border: 1px solid rgb(70, 70, 70);
     border-radius: 5px;
     font-family:Verdana, Arial, Helvetica, sans-serif;
   }
- 
+
+ *{-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;} 
   .card_Q img {
     border-radius: 5px 5px 5px 5px;
     display: block;
